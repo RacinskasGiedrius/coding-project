@@ -1,0 +1,3 @@
+C:/Users/Giedrius/Desktop/VIKO/Coding/To-Do list/cmake-build-debug/CMakeFiles/To_Do_list.dir
+C:/Users/Giedrius/Desktop/VIKO/Coding/To-Do list/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Giedrius/Desktop/VIKO/Coding/To-Do list/cmake-build-debug/CMakeFiles/rebuild_cache.dir
