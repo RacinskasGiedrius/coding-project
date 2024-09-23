@@ -2,11 +2,19 @@
 
 using namespace std;
 
-void welcome() {
+void welcomeDesign() {
 
     cout << "===============================\n";
     cout << "||  Welcome to the Calc!     ||\n";
     cout << "||  To start, type [start]   ||\n";
+    cout << "||  To exit, type [exit]     ||\n";
+    cout << "===============================\n";
+}
+
+void calculateDesign() {
+    cout << "===============================\n";
+    cout << "||  [Num1] [Operator] [Num2] ||\n";
+    cout << "||  [Enter] after each entry ||\n";
     cout << "||  To exit, type [exit]     ||\n";
     cout << "===============================\n";
 }
@@ -30,6 +38,15 @@ void errorCommand() {
     body();
 }
 
+void errorNumber() {
+    cout << "===============================\n";
+    cout << "||  Error!                   ||\n";
+    cout << "||  Invalid number!          ||\n";
+    cout << "||  Please try again!        ||\n";
+    cout << "===============================\n";
+    body();
+}
+
 void errorOperator() {
     cout << "===============================\n";
     cout << "||  Error!                   ||\n";
@@ -37,4 +54,10 @@ void errorOperator() {
     cout << "||  Please try again!        ||\n";
     cout << "===============================\n";
     body();
+}
+
+void clearScreen() {
+    for (int i = 0; i < 100; ++i) {
+        cout << endl;
+    }
 }
