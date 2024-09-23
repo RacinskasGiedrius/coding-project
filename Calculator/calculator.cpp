@@ -7,7 +7,6 @@
 using namespace std;
 
 int main() {
-
     initiateCalculator();
     while (true) {
         calculatorApp();

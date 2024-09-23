@@ -52,13 +52,45 @@ void userInput() {
     cin >> num1;
     cout << endl;
 
+
+    // Handle if the first number is not an Integer;
+    while (cin.fail()) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        clearScreen();
+        errorNumber();
+        cout << "[Type in the first number below]\n";
+        cin >> num1;
+        cout << endl;
+    }
+
     cout << "[Type in the Operator (+, -, *, /) below]\n";
     cin >> selectedOperator;
     cout << endl;
 
+    // Handle if Operator is invalid;
+    while (selectedOperator != "+" && selectedOperator != "-" && selectedOperator != "/" && selectedOperator != "*") {
+        clearScreen();
+        errorOperator();
+        cout << "[Type in the Operator (+, -, *, /) below]\n";
+        cin >> selectedOperator;
+        cout << endl;
+    }
+
     cout << "[Type in the second number below]\n";
     cin >> num2;
     cout << endl;
+
+    // Handle if the second number is not an Integer;
+    while (cin.fail()) {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        clearScreen();
+        errorNumber();
+        cout << "[Type in the second number below]\n";
+        cin >> num2;
+        cout << endl;
+    }
 }
 
 void calculateResult() {
@@ -74,12 +106,6 @@ void calculateResult() {
     else if (selectedOperator == "/") {
         result = num1 / num2;
     }
-    else {
-        errorOperator();
-        cout << "[Type in the Operator (+, -, *, /) below]\n";
-        cin >> selectedOperator;
-        cout << endl;
-    }
 }
 
 void displayResult() {
@@ -94,30 +120,4 @@ void displayResult() {
     cout << "||  Type in [C] or [exit]    ||\n";
     cout << "===============================\n";
     body();
-
-    // Prompt for continued usage of calculator;
-    // cout << "[Select your action]\n";
-    // cin >> userAction;
-    // cout << endl;
 }
-
-// void repeatCalculator() {
-//
-//     while (true) {
-//         if (userAction == "C") {
-//             clearScreen();
-//             userInput();
-//             break;
-//         }
-//         else if (userAction == "exit") {
-//             exit(0);
-//         }
-//         else {
-//             clearScreen();
-//             errorCommand();
-//             cout << "[Select your action]\n";
-//             cin >> userAction;
-//             cout << endl;
-//         }
-//     }
-// }
