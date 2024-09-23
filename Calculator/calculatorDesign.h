@@ -11,7 +11,6 @@ void body();
 void errorCommand();
 void errorNumber();
 void errorOperator();
-void clearScreen();
 void errorDivisionByZero();
 
 #endif //CALCULATORDESIGN_H

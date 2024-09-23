@@ -1,8 +1,9 @@
+#include "calculatorDesign.h"
+#include "calculatorFunctionality.h"
+#include "helperFunctions.h"
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-#include "calculatorDesign.h"
-#include "calculatorFunctionality.h"
 
 using namespace std;
 

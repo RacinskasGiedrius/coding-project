@@ -1,24 +1,26 @@
 #include "calculatorFunctionality.h"
-
+#include "calculatorDesign.h"
+#include "helperFunctions.h"
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-#include "calculatorDesign.h"
 
 using namespace std;
 
-string selectedOperator;
-string userAction;
-int num1;
-int num2;
-int result;
+string selectedOperator = "";
+string userAction = "";
+int num1 = 0;
+int num2 = 0;
+int result = 0;
 
+// Functionality added into one function to leave main less clustered;
 void calculatorApp() {
     userInput();
     calculateResult();
     displayResult();
 }
 
+// Initial screen for the calculator;
 void initiateCalculator() {
     welcomeDesign();
     body();
@@ -45,6 +47,7 @@ void initiateCalculator() {
     }
 }
 
+// Function to ask user input for the calculation;
 void userInput() {
     calculateDesign();
     body();
@@ -55,10 +58,7 @@ void userInput() {
 
     // Handle if the first number is not an Integer;
     while (cin.fail()) {
-        cin.clear();
-        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        clearScreen();
-        errorNumber();
+        handleInvalidInput();
         cout << "[Type in the first number below]\n";
         cin >> num1;
         cout << endl;
@@ -83,16 +83,14 @@ void userInput() {
 
     // Handle if the second number is not an Integer;
     while (cin.fail()) {
-        cin.clear();
-        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        clearScreen();
-        errorNumber();
+        handleInvalidInput();
         cout << "[Type in the second number below]\n";
         cin >> num2;
         cout << endl;
     }
 }
 
+// Function to calculate the user input;
 void calculateResult() {
     if (selectedOperator == "+") {
         result = num1 + num2;
@@ -125,6 +123,8 @@ void calculateResult() {
     }
 }
 
+
+// Display the result, separated from the design file due to additional logic needed;
 void displayResult() {
     clearScreen();
     cout << "===============================\n";

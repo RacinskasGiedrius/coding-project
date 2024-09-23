@@ -64,9 +64,3 @@ void errorDivisionByZero() {
     cout << "===============================\n";
     body();
 }
-
-void clearScreen() {
-    for (int i = 0; i < 100; ++i) {
-        cout << endl;
-    }
-}
