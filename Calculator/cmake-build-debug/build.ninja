@@ -49,6 +49,18 @@ cmake_ninja_workdir = C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-bu
 
 build cmake_object_order_depends_target_Calculator: phony || .
 
+build CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/calculatorFunctionality.cpp || cmake_object_order_depends_target_Calculator
+  DEP_FILE = CMakeFiles\Calculator.dir\calculatorFunctionality.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir
+
+build CMakeFiles/Calculator.dir/calculatorDesign.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/calculatorDesign.cpp || cmake_object_order_depends_target_Calculator
+  DEP_FILE = CMakeFiles\Calculator.dir\calculatorDesign.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir
+
 build CMakeFiles/Calculator.dir/calculator.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/calculator.cpp || cmake_object_order_depends_target_Calculator
   DEP_FILE = CMakeFiles\Calculator.dir\calculator.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
@@ -63,7 +75,7 @@ build CMakeFiles/Calculator.dir/calculator.cpp.obj: CXX_COMPILER__Calculator_uns
 #############################################
 # Link the executable Calculator.exe
 
-build Calculator.exe: CXX_EXECUTABLE_LINKER__Calculator_Debug CMakeFiles/Calculator.dir/calculator.cpp.obj
+build Calculator.exe: CXX_EXECUTABLE_LINKER__Calculator_Debug CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj CMakeFiles/Calculator.dir/calculatorDesign.cpp.obj CMakeFiles/Calculator.dir/calculator.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Calculator.dir

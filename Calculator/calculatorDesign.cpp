@@ -14,8 +14,8 @@ void welcomeDesign() {
 void calculateDesign() {
     cout << "===============================\n";
     cout << "||  [Num1] [Operator] [Num2] ||\n";
-    cout << "||  [Enter] after each entry ||\n";
-    cout << "||  To exit, type [exit]     ||\n";
+    cout << "||  Press [Enter] after each ||\n";
+    cout << "||  entry.                   ||\n";
     cout << "===============================\n";
 }
 
