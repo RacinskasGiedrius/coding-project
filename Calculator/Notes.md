@@ -4,6 +4,11 @@ TO-DO list
 * Rewrite body() UI;
 * Add Help;
 * Change while() to for() to limit attempts;
+* Add Unit Tests;
+* Separate each function in a different file;
+* Use directory structure?;
+* Try to build the app;
+* Handle double instead of int when needed;
 
 DONE list
 * Make the calculator repeatable; [Done]
