@@ -104,7 +104,24 @@ void calculateResult() {
         result = num1 * num2;
     }
     else if (selectedOperator == "/") {
-        result = num1 / num2;
+        // Handle division by 0;
+        if (num2 == 0) {
+            clearScreen();
+            errorDivisionByZero();
+            cout << "[Select your action]\n";
+            cin >> userAction;
+            while (userAction != "C") {
+                clearScreen();
+                errorDivisionByZero();
+                cout << "[Select your action]\n";
+                cin >> userAction;
+            }
+            clearScreen();
+            calculatorApp();
+        }
+        else {
+            result = num1 / num2;
+        }
     }
 }
 

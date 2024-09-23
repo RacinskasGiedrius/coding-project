@@ -56,6 +56,15 @@ void errorOperator() {
     body();
 }
 
+void errorDivisionByZero() {
+    cout << "===============================\n";
+    cout << "||  Error!                   ||\n";
+    cout << "||  Division by zero!        ||\n";
+    cout << "||  Type in [C] to continue  ||\n";
+    cout << "===============================\n";
+    body();
+}
+
 void clearScreen() {
     for (int i = 0; i < 100; ++i) {
         cout << endl;
