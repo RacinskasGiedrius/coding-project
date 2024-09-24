@@ -4,7 +4,8 @@ TO-DO list
 * Change while() to for() to limit attempts;
 * Add Unit Tests;
 * Separate each function in a different file;
-* Add long result handling (convert to long);
+* 0,2 input in num breaks the app;
+* Make the errors more informative;
 
 
 DONE list

@@ -1,6 +1,6 @@
-#include "calculatorFunctionality.h"
-#include "../Design/calculatorDesign.h"
-#include "../Helper Functions/helperFunctions.h"
+#include "../include/calculatorFunctionality.h"
+#include "../include/calculatorDesign.h"
+#include "../include/helperFunctions.h"
 #include <iostream>
 #include <cmath>
 #include <iomanip>
@@ -82,7 +82,7 @@ void userInput() {
 
     std::cout << "[Type in the second number below]\n";
     std::cin >> num2;
-    std::cout << std::endl;
+    std::cout << "[DEBUG] Num2 = " << num2 << std::endl;
 
     // Handle if the second number is not an Integer;
     while (std::cin.fail()) {
@@ -145,7 +145,7 @@ void displayResult() {
             std::cout << std::setw(25) << std::right << static_cast<int>(result.doubleResult);
         }
         else {
-            std::cout << std::setw(25) << std::right << std::fixed << std::setprecision(2) << result.doubleResult;
+            std::cout << std::setw(25) << std::right << result.doubleResult;
         }
     }
     else {

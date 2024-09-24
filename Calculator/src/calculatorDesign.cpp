@@ -2,7 +2,6 @@
 #include <iomanip>
 
 void welcomeDesign() {
-
     std::cout << "===============================\n";
     std::cout << "||              Calculator!  ||\n";
     std::cout << "||                Start [1]  ||\n";
@@ -19,7 +18,6 @@ void calculateDesign() {
 }
 
 void body() {
-
     std::cout << "||  ( 9 ) ( 8 ) ( 7 ) ( / )  ||\n";
     std::cout << "||  ( 6 ) ( 5 ) ( 4 ) ( * )  ||\n";
     std::cout << "||  ( 3 ) ( 2 ) ( 1 ) ( - )  ||\n";

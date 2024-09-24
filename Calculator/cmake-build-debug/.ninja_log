@@ -21,3 +21,15 @@
 5	518	7488814534595018	CMakeFiles/Calculator.dir/Main/Design/calculatorDesign.cpp.obj	ec3c0801406270c5
 16	543	7488814534705120	CMakeFiles/Calculator.dir/Main/Helper_Functions/helperFunctions.cpp.obj	dd44545d2d94ead2
 5	108	7488814655498116	Calculator.exe	1adb5363918a1469
+20	552	7488820857474555	CMakeFiles/Calculator.dir/Main/Helper_Functions/helperFunctions.cpp.obj	dd44545d2d94ead2
+6	693	7488820857324424	CMakeFiles/Calculator.dir/Main/Functionality/calculatorFunctionality.cpp.obj	418cc0fd58b3c150
+6	501	7488821086754896	CMakeFiles/Calculator.dir/Main/Design/calculatorDesign.cpp.obj	ec3c0801406270c5
+502	604	7488821091719418	Calculator.exe	1adb5363918a1469
+5	607	7488822120349332	CMakeFiles/Calculator.dir/Main/Functionality/calculatorFunctionality.cpp.obj	418cc0fd58b3c150
+607	709	7488822126374809	Calculator.exe	1adb5363918a1469
+5	657	7488828020297702	CMakeFiles/Calculator.dir/Main/Functionality/calculatorFunctionality.cpp.obj	418cc0fd58b3c150
+657	769	7488828026823642	Calculator.exe	1adb5363918a1469
+5	645	7488829909930923	CMakeFiles/Calculator.dir/Main/Functionality/calculatorFunctionality.cpp.obj	418cc0fd58b3c150
+645	760	7488829916339430	Calculator.exe	1adb5363918a1469
+6	622	7488830707926236	CMakeFiles/Calculator.dir/Main/Functionality/calculatorFunctionality.cpp.obj	418cc0fd58b3c150
+622	727	7488830714091841	Calculator.exe	1adb5363918a1469
