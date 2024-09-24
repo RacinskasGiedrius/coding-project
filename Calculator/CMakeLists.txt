@@ -4,8 +4,8 @@ project(Calculator)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Calculator
-        calculatorFunctionality.cpp
-        calculatorDesign.cpp
-        calculator.cpp
-        helperFunctions.cpp
-        helperFunctions.h)
+        Main/Functionality/calculatorFunctionality.cpp
+        Main/Design/calculatorDesign.cpp
+        Main/calculator.cpp
+        "Main/Helper Functions/helperFunctions.cpp"
+        "Main/Helper Functions/helperFunctions.h")

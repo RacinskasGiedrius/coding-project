@@ -1,6 +1,6 @@
-#include "calculatorDesign.h"
-#include "calculatorFunctionality.h"
-#include "helperFunctions.h"
+#include "Design/calculatorDesign.h"
+#include "Functionality/calculatorFunctionality.h"
+#include "Helper Functions/helperFunctions.h"
 #include <iostream>
 #include <cmath>
 #include <iomanip>

@@ -1,14 +1,14 @@
 #include "calculatorFunctionality.h"
-#include "calculatorDesign.h"
-#include "helperFunctions.h"
+#include "../Design/calculatorDesign.h"
+#include "../Helper Functions/helperFunctions.h"
 #include <iostream>
 #include <cmath>
 #include <iomanip>
 
 using namespace std;
 
-string selectedOperator = "";
-string userAction = "";
+string selectedOperator;
+string userAction;
 int num1 = 0;
 int num2 = 0;
 int result = 0;

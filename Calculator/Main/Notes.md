@@ -6,7 +6,6 @@ TO-DO list
 * Change while() to for() to limit attempts;
 * Add Unit Tests;
 * Separate each function in a different file;
-* Use directory structure?;
 * Try to build the app;
 * Handle double instead of int when needed;
 
@@ -18,3 +17,4 @@ DONE list
 * Initialize variables to avoid undefined behavior; [Done]
 * Separate helper functions in a different file; [Done]
 * Add descriptions to functions; [Done]
+* Use directory structure?; [Done]

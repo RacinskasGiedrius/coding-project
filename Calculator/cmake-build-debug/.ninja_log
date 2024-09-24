@@ -1,16 +1,14 @@
 # ninja log v6
-21	644	7488082820814416	CMakeFiles/Calculator.dir/calculator.cpp.obj	396d30d57af4211b
-17	483	7488085217565051	CMakeFiles/Calculator.dir/calculatorDesign.cpp.obj	c7f9bfbd1caf5b64
-608	717	7488091019045002	Calculator.exe	b2cfb4956bc4f99d
-5	607	7488091013019523	CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj	2ab17e63d48e6dd4
-2	225	7488094857394211	build.ninja	653df4a0773bb826
-2	9	7488012515617934	clean	567f01a6bad3308b
-16	496	7488099402268972	CMakeFiles/Calculator.dir/calculatorDesign.cpp.obj	c7f9bfbd1caf5b64
-24	573	7488099402359044	CMakeFiles/Calculator.dir/helperFunctions.cpp.obj	e2f5f1a6632bed1e
 20	658	7488099402309006	CMakeFiles/Calculator.dir/calculator.cpp.obj	396d30d57af4211b
-5	702	7488099402158863	CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj	2ab17e63d48e6dd4
-702	813	7488099409125204	Calculator.exe	18cbac4cd580c008
-7	613	7488103685584328	CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj	2ab17e63d48e6dd4
-614	727	7488103691648519	Calculator.exe	18cbac4cd580c008
-6	644	7488110523886538	CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj	2ab17e63d48e6dd4
 644	772	7488110530271848	Calculator.exe	18cbac4cd580c008
+16	496	7488099402268972	CMakeFiles/Calculator.dir/calculatorDesign.cpp.obj	c7f9bfbd1caf5b64
+6	644	7488110523886538	CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj	2ab17e63d48e6dd4
+2	225	7488658815186517	build.ninja	653df4a0773bb826
+2	9	7488012515617934	clean	567f01a6bad3308b
+24	573	7488099402359044	CMakeFiles/Calculator.dir/helperFunctions.cpp.obj	e2f5f1a6632bed1e
+1	231	7488658815186517	build.ninja	653df4a0773bb826
+13	534	7488658815556851	CMakeFiles/Calculator.dir/calculatorDesign.cpp.obj	c7f9bfbd1caf5b64
+23	640	7488658815656947	CMakeFiles/Calculator.dir/helperFunctions.cpp.obj	e2f5f1a6632bed1e
+18	704	7488658815606910	CMakeFiles/Calculator.dir/calculator.cpp.obj	396d30d57af4211b
+3	757	7488658815456761	CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj	2ab17e63d48e6dd4
+757	876	7488658822993881	Calculator.exe	18cbac4cd580c008
