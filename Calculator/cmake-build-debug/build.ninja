@@ -49,29 +49,29 @@ cmake_ninja_workdir = C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-bu
 
 build cmake_object_order_depends_target_Calculator: phony || .
 
-build CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/calculatorFunctionality.cpp || cmake_object_order_depends_target_Calculator
-  DEP_FILE = CMakeFiles\Calculator.dir\calculatorFunctionality.cpp.obj.d
+build CMakeFiles/Calculator.dir/Main/Functionality/calculatorFunctionality.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/Main/Functionality/calculatorFunctionality.cpp || cmake_object_order_depends_target_Calculator
+  DEP_FILE = CMakeFiles\Calculator.dir\Main\Functionality\calculatorFunctionality.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Calculator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\Main\Functionality
 
-build CMakeFiles/Calculator.dir/calculatorDesign.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/calculatorDesign.cpp || cmake_object_order_depends_target_Calculator
-  DEP_FILE = CMakeFiles\Calculator.dir\calculatorDesign.cpp.obj.d
+build CMakeFiles/Calculator.dir/Main/Design/calculatorDesign.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/Main/Design/calculatorDesign.cpp || cmake_object_order_depends_target_Calculator
+  DEP_FILE = CMakeFiles\Calculator.dir\Main\Design\calculatorDesign.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Calculator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\Main\Design
 
-build CMakeFiles/Calculator.dir/calculator.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/calculator.cpp || cmake_object_order_depends_target_Calculator
-  DEP_FILE = CMakeFiles\Calculator.dir\calculator.cpp.obj.d
+build CMakeFiles/Calculator.dir/Main/calculator.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/Main/calculator.cpp || cmake_object_order_depends_target_Calculator
+  DEP_FILE = CMakeFiles\Calculator.dir\Main\calculator.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Calculator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\Main
 
-build CMakeFiles/Calculator.dir/helperFunctions.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/helperFunctions.cpp || cmake_object_order_depends_target_Calculator
-  DEP_FILE = CMakeFiles\Calculator.dir\helperFunctions.cpp.obj.d
+build CMakeFiles/Calculator.dir/Main/Helper_Functions/helperFunctions.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/Main/Helper$ Functions/helperFunctions.cpp || cmake_object_order_depends_target_Calculator
+  DEP_FILE = CMakeFiles\Calculator.dir\Main\Helper_Functions\helperFunctions.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Calculator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\Main\Helper_Functions
 
 
 # =============================================================================
@@ -81,7 +81,7 @@ build CMakeFiles/Calculator.dir/helperFunctions.cpp.obj: CXX_COMPILER__Calculato
 #############################################
 # Link the executable Calculator.exe
 
-build Calculator.exe: CXX_EXECUTABLE_LINKER__Calculator_Debug CMakeFiles/Calculator.dir/calculatorFunctionality.cpp.obj CMakeFiles/Calculator.dir/calculatorDesign.cpp.obj CMakeFiles/Calculator.dir/calculator.cpp.obj CMakeFiles/Calculator.dir/helperFunctions.cpp.obj
+build Calculator.exe: CXX_EXECUTABLE_LINKER__Calculator_Debug CMakeFiles/Calculator.dir/Main/Functionality/calculatorFunctionality.cpp.obj CMakeFiles/Calculator.dir/Main/Design/calculatorDesign.cpp.obj CMakeFiles/Calculator.dir/Main/calculator.cpp.obj CMakeFiles/Calculator.dir/Main/Helper_Functions/helperFunctions.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Calculator.dir

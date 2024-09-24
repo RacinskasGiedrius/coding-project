@@ -1,4 +1,4 @@
-#include "calculatorDesign.h"
+#include "../Design/calculatorDesign.h"
 #include <iostream>
 #include <cmath>
 
