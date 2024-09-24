@@ -2,18 +2,14 @@
 #include <iostream>
 #include <cmath>
 
-
-using namespace std;
-
 void clearScreen() {
     for (int i = 0; i < 100; ++i) {
-        cout << endl;
+        std::cout << std::endl;
     }
 }
 
 void handleInvalidInput() {
-    cin.clear();
-    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     clearScreen();
-    errorNumber();
 }

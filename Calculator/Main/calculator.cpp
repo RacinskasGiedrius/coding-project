@@ -5,25 +5,36 @@
 #include <cmath>
 #include <iomanip>
 
-using namespace std;
-
 int main() {
     initiateCalculator();
     while (true) {
         calculatorApp();
-        string repeatCalculator;
-        cout << "[Select your action]\n";
-        cin >> repeatCalculator;
+        int repeatCalculator;
+        std::cout << "[Select your action]\n";
+        std::cin >> repeatCalculator;
+        std::cout << std::endl;
 
-        if (repeatCalculator == "exit") {
-            break;
-        }
-        else if (repeatCalculator == "C") {
+        if (repeatCalculator == 1) {
             clearScreen();
             continue;
         }
-        else {
+        else if (repeatCalculator == 2) {
+            exit(0);
+        }
+        while (std::cin.fail() || (repeatCalculator != 1 && repeatCalculator != 2)) {
+            handleInvalidInput();
             errorCommand();
+            std::cout << "[Select your action]\n";
+            std::cin >> repeatCalculator;
+            std::cout << std::endl;
+
+            if (repeatCalculator == 1) {
+                clearScreen();
+                continue;
+            }
+            else if (repeatCalculator == 2) {
+                exit(0);
+            }
         }
     }
 }

@@ -7,7 +7,8 @@ TO-DO list
 * Add Unit Tests;
 * Separate each function in a different file;
 * Try to build the app;
-* Handle double instead of int when needed;
+* Add long result handling (convert to long);
+
 
 DONE list
 * Make the calculator repeatable; [Done]
@@ -18,3 +19,6 @@ DONE list
 * Separate helper functions in a different file; [Done]
 * Add descriptions to functions; [Done]
 * Use directory structure?; [Done]
+* Handle double instead of int when needed; [Done]
+* Rewrite navigation using numbers for better UX; [Done]
+* Fix app repeating, passes after two incorrect replies; [Done]

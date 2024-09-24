@@ -5,13 +5,15 @@
 #include <cmath>
 #include <iomanip>
 
-using namespace std;
-
-string selectedOperator;
-string userAction;
+std::string selectedOperator;
+int userAction;
 int num1 = 0;
 int num2 = 0;
-int result = 0;
+union {
+    int intResult;
+    double doubleResult;
+} result;
+bool isDoubleResult = false;
 
 // Functionality added into one function to leave main less clustered;
 void calculatorApp() {
@@ -24,25 +26,25 @@ void calculatorApp() {
 void initiateCalculator() {
     welcomeDesign();
     body();
-    cout << "[Select your action]\n";
-    cin >> userAction;
-    cout << endl;
+    std::cout << "[Select your action]\n";
+    std::cin >> userAction;
+    std::cout << std::endl;
 
 
     while (true) {
-        if (userAction == "start") {
+        if (userAction == 1) {
             clearScreen();
             break;
         }
-        else if (userAction == "exit") {
+        else if (userAction == 2) {
             exit(0);
         }
-        else {
-            clearScreen();
+        else if (std::cin.fail() || (userAction != 1 && userAction != 2)) {
+            handleInvalidInput();
             errorCommand();
-            cout << "[Select your action]\n";
-            cin >> userAction;
-            cout << endl;
+            std::cout << "[Select your action]\n";
+            std::cin >> userAction;
+            std::cout << std::endl;
         }
     }
 }
@@ -51,74 +53,81 @@ void initiateCalculator() {
 void userInput() {
     calculateDesign();
     body();
-    cout << "[Type in the first number below]\n";
-    cin >> num1;
-    cout << endl;
+    std::cout << "[Type in the first number below]\n";
+    std::cin >> num1;
+    std::cout << std::endl;
 
 
     // Handle if the first number is not an Integer;
-    while (cin.fail()) {
+    while (std::cin.fail()) {
         handleInvalidInput();
-        cout << "[Type in the first number below]\n";
-        cin >> num1;
-        cout << endl;
+        errorNumber();
+        std::cout << "[Type in the first number below]\n";
+        std::cin >> num1;
+        std::cout << std::endl;
     }
 
-    cout << "[Type in the Operator (+, -, *, /) below]\n";
-    cin >> selectedOperator;
-    cout << endl;
+    std::cout << "[Type in the Operator (+, -, *, /) below]\n";
+    std::cin >> selectedOperator;
+    std::cout << std::endl;
 
     // Handle if Operator is invalid;
     while (selectedOperator != "+" && selectedOperator != "-" && selectedOperator != "/" && selectedOperator != "*") {
         clearScreen();
         errorOperator();
-        cout << "[Type in the Operator (+, -, *, /) below]\n";
-        cin >> selectedOperator;
-        cout << endl;
+        std::cout << "[Type in the Operator (+, -, *, /) below]\n";
+        std::cin >> selectedOperator;
+        std::cout << std::endl;
     }
 
-    cout << "[Type in the second number below]\n";
-    cin >> num2;
-    cout << endl;
+    std::cout << "[Type in the second number below]\n";
+    std::cin >> num2;
+    std::cout << std::endl;
 
     // Handle if the second number is not an Integer;
-    while (cin.fail()) {
+    while (std::cin.fail()) {
         handleInvalidInput();
-        cout << "[Type in the second number below]\n";
-        cin >> num2;
-        cout << endl;
+        errorNumber();
+        std::cout << "[Type in the second number below]\n";
+        std::cin >> num2;
+        std::cout << std::endl;
     }
 }
 
 // Function to calculate the user input;
 void calculateResult() {
     if (selectedOperator == "+") {
-        result = num1 + num2;
+        // int result = static_cast<int>(num1) + static_cast<int>(num2);
+        result.intResult = num1 + num2;
+        isDoubleResult = false;
     }
     else if (selectedOperator == "-") {
-        result = num1 - num2;
+        result.intResult = num1 - num2;
+        isDoubleResult = false;
     }
     else if (selectedOperator == "*") {
-        result = num1 * num2;
+        result.intResult = num1 * num2;
+        isDoubleResult = false;
     }
     else if (selectedOperator == "/") {
         // Handle division by 0;
         if (num2 == 0) {
             clearScreen();
             errorDivisionByZero();
-            cout << "[Select your action]\n";
-            cin >> userAction;
-            while (userAction != "C") {
+            std::cout << "[Select your action]\n";
+            std::cin >> userAction;
+            while (userAction != 1) {
                 clearScreen();
                 errorDivisionByZero();
-                cout << "[Select your action]\n";
-                cin >> userAction;
+                std::cout << "[Select your action]\n";
+                std::cin >> userAction;
             }
             clearScreen();
             calculatorApp();
         }
         else {
-            result = num1 / num2;
+            result.doubleResult = static_cast<double>(num1) / static_cast<double>(num2);
+            isDoubleResult = true;
         }
     }
 }
@@ -127,14 +136,24 @@ void calculateResult() {
 // Display the result, separated from the design file due to additional logic needed;
 void displayResult() {
     clearScreen();
-    cout << "===============================\n";
-    cout << "||";
-    cout << setw(25) << right << (to_string(num1) + " " + selectedOperator + " " + to_string(num2));
-    cout << "  ||\n";
-    cout << "||";
-    cout << setw(25) << right << result;
-    cout << "  ||\n";
-    cout << "||  Type in [C] or [exit]    ||\n";
-    cout << "===============================\n";
+    std::cout << "===============================\n";
+    std::cout << "||";
+    std::cout << std::setw(25) << std::right << (std::to_string(num1) + " " + selectedOperator + " " + std::to_string(num2));
+    std::cout << "  ||\n";
+    std::cout << "||";
+    if (isDoubleResult) {
+        if (result.doubleResult == static_cast<int>(result.doubleResult)) {
+            std::cout << std::setw(25) << std::right << static_cast<int>(result.doubleResult);
+        }
+        else {
+            std::cout << std::setw(25) << std::right << std::fixed << std::setprecision(2) << result.doubleResult;
+        }
+    }
+    else {
+        std::cout << std::setw(25) << std::right << result.intResult;
+    }
+    std::cout << "  ||\n";
+    std::cout << "||    Continue [1] Exit [2]  ||\n";
+    std::cout << "===============================\n";
     body();
 }
