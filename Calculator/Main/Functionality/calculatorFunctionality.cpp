@@ -132,7 +132,6 @@ void calculateResult() {
     }
 }
 
-
 // Display the result, separated from the design file due to additional logic needed;
 void displayResult() {
     clearScreen();

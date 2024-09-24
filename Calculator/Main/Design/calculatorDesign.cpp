@@ -1,9 +1,10 @@
 #include <iostream>
+#include <iomanip>
 
 void welcomeDesign() {
 
     std::cout << "===============================\n";
-    std::cout << "||     Welcome to the Calc!  ||\n";
+    std::cout << "||              Calculator!  ||\n";
     std::cout << "||                Start [1]  ||\n";
     std::cout << "||                Exit  [2]  ||\n";
     std::cout << "===============================\n";

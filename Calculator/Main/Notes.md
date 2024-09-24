@@ -1,12 +1,9 @@
 TO-DO list
 
-* Make it ignore lower/upper case letters in commands;
-* Rewrite body() UI;
 * Add Help;
 * Change while() to for() to limit attempts;
 * Add Unit Tests;
 * Separate each function in a different file;
-* Try to build the app;
 * Add long result handling (convert to long);
 
 
