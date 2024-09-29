@@ -9,7 +9,7 @@ std::string selectedOperator;
 int userAction;
 int num1 = 0;
 int num2 = 0;
-union {
+union Result {
     int intResult;
     double doubleResult;
 } result;

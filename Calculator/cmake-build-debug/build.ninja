@@ -49,29 +49,37 @@ cmake_ninja_workdir = C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-bu
 
 build cmake_object_order_depends_target_Calculator: phony || .
 
-build CMakeFiles/Calculator.dir/Main/Functionality/calculatorFunctionality.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/Main/Functionality/calculatorFunctionality.cpp || cmake_object_order_depends_target_Calculator
-  DEP_FILE = CMakeFiles\Calculator.dir\Main\Functionality\calculatorFunctionality.cpp.obj.d
+build CMakeFiles/Calculator.dir/src/calculatorFunctionality.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/src/calculatorFunctionality.cpp || cmake_object_order_depends_target_Calculator
+  DEFINES = -DGTEST_LINKED_AS_SHARED_LIBRARY=1
+  DEP_FILE = CMakeFiles\Calculator.dir\src\calculatorFunctionality.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/include
   OBJECT_DIR = CMakeFiles\Calculator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\Main\Functionality
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\src
 
-build CMakeFiles/Calculator.dir/Main/Design/calculatorDesign.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/Main/Design/calculatorDesign.cpp || cmake_object_order_depends_target_Calculator
-  DEP_FILE = CMakeFiles\Calculator.dir\Main\Design\calculatorDesign.cpp.obj.d
+build CMakeFiles/Calculator.dir/src/calculatorDesign.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/src/calculatorDesign.cpp || cmake_object_order_depends_target_Calculator
+  DEFINES = -DGTEST_LINKED_AS_SHARED_LIBRARY=1
+  DEP_FILE = CMakeFiles\Calculator.dir\src\calculatorDesign.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/include
   OBJECT_DIR = CMakeFiles\Calculator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\Main\Design
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\src
 
-build CMakeFiles/Calculator.dir/Main/calculator.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/Main/calculator.cpp || cmake_object_order_depends_target_Calculator
-  DEP_FILE = CMakeFiles\Calculator.dir\Main\calculator.cpp.obj.d
+build CMakeFiles/Calculator.dir/src/calculator.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/src/calculator.cpp || cmake_object_order_depends_target_Calculator
+  DEFINES = -DGTEST_LINKED_AS_SHARED_LIBRARY=1
+  DEP_FILE = CMakeFiles\Calculator.dir\src\calculator.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/include
   OBJECT_DIR = CMakeFiles\Calculator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\Main
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\src
 
-build CMakeFiles/Calculator.dir/Main/Helper_Functions/helperFunctions.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/Main/Helper$ Functions/helperFunctions.cpp || cmake_object_order_depends_target_Calculator
-  DEP_FILE = CMakeFiles\Calculator.dir\Main\Helper_Functions\helperFunctions.cpp.obj.d
+build CMakeFiles/Calculator.dir/src/helperFunctions.cpp.obj: CXX_COMPILER__Calculator_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/src/helperFunctions.cpp || cmake_object_order_depends_target_Calculator
+  DEFINES = -DGTEST_LINKED_AS_SHARED_LIBRARY=1
+  DEP_FILE = CMakeFiles\Calculator.dir\src\helperFunctions.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/include
   OBJECT_DIR = CMakeFiles\Calculator.dir
-  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\Main\Helper_Functions
+  OBJECT_FILE_DIR = CMakeFiles\Calculator.dir\src
 
 
 # =============================================================================
@@ -81,15 +89,62 @@ build CMakeFiles/Calculator.dir/Main/Helper_Functions/helperFunctions.cpp.obj: C
 #############################################
 # Link the executable Calculator.exe
 
-build Calculator.exe: CXX_EXECUTABLE_LINKER__Calculator_Debug CMakeFiles/Calculator.dir/Main/Functionality/calculatorFunctionality.cpp.obj CMakeFiles/Calculator.dir/Main/Design/calculatorDesign.cpp.obj CMakeFiles/Calculator.dir/Main/calculator.cpp.obj CMakeFiles/Calculator.dir/Main/Helper_Functions/helperFunctions.cpp.obj
+build Calculator.exe: CXX_EXECUTABLE_LINKER__Calculator_Debug CMakeFiles/Calculator.dir/src/calculatorFunctionality.cpp.obj CMakeFiles/Calculator.dir/src/calculatorDesign.cpp.obj CMakeFiles/Calculator.dir/src/calculator.cpp.obj CMakeFiles/Calculator.dir/src/helperFunctions.cpp.obj | C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libgtest.dll.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libgtest.dll.a  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Calculator.dir
-  POST_BUILD = cd .
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Giedrius\Desktop\VIKO\Coding\Calculator\cmake-build-debug && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Giedrius/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-build-debug/Calculator.exe -installedDir C:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/bin -OutVariable out"
   PRE_LINK = cd .
   TARGET_FILE = Calculator.exe
   TARGET_IMPLIB = libCalculator.dll.a
   TARGET_PDB = Calculator.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target runTests
+
+
+#############################################
+# Order-only phony target for runTests
+
+build cmake_object_order_depends_target_runTests: phony || .
+
+build CMakeFiles/runTests.dir/tests/testCalculation.cpp.obj: CXX_COMPILER__runTests_unscanned_Debug C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/tests/testCalculation.cpp || cmake_object_order_depends_target_runTests
+  DEFINES = -DGTEST_LINKED_AS_SHARED_LIBRARY=1
+  DEP_FILE = CMakeFiles\runTests.dir\tests\testCalculation.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/include
+  OBJECT_DIR = CMakeFiles\runTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\runTests.dir\tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target runTests
+
+
+#############################################
+# Link the executable runTests.exe
+
+build runTests.exe: CXX_EXECUTABLE_LINKER__runTests_Debug CMakeFiles/runTests.dir/tests/testCalculation.cpp.obj | C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libgtest.dll.a
+  FLAGS = -g
+  LINK_LIBRARIES = C:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libgtest.dll.a  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\runTests.dir
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Giedrius\Desktop\VIKO\Coding\Calculator\cmake-build-debug && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/Giedrius/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-build-debug/runTests.exe -installedDir C:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/bin -OutVariable out"
+  PRE_LINK = cd .
+  TARGET_FILE = runTests.exe
+  TARGET_IMPLIB = librunTests.dll.a
+  TARGET_PDB = runTests.exe.dbg
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Giedrius\Desktop\VIKO\Coding\Calculator\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
 
 
 #############################################
@@ -119,6 +174,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Calculator: phony Calculator.exe
 
+build runTests: phony runTests.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -127,7 +184,7 @@ build Calculator: phony Calculator.exe
 #############################################
 # Folder: C:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-build-debug
 
-build all: phony Calculator.exe
+build all: phony Calculator.exe runTests.exe
 
 # =============================================================================
 # Built-in targets
@@ -136,14 +193,14 @@ build all: phony Calculator.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindGTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/GoogleTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestConfig.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestConfigVersion.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestTargets-debug.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestTargets-release.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestTargets.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindGTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/GoogleTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestConfig.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestConfigVersion.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestTargets-debug.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestTargets-release.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/gtest/GTestTargets.cmake C$:/Users/Giedrius/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake C$:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

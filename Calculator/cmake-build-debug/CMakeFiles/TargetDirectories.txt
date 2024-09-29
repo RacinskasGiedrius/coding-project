@@ -1,3 +1,5 @@
 C:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-build-debug/CMakeFiles/Calculator.dir
+C:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-build-debug/CMakeFiles/runTests.dir
+C:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-build-debug/CMakeFiles/test.dir
 C:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Giedrius/Desktop/VIKO/Coding/Calculator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
