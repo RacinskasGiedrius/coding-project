@@ -4,5 +4,6 @@
 #include <vector>
 
 int main() {
-    mainMenu();
+    addTask();
+    viewTasks();
 }
