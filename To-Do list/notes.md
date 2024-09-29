@@ -1,11 +1,3 @@
 TODO LIST
 
-MENU:
-1. Add Tasks;
-2. View Tasks;
-3. Edit Tasks;
-4. Delete Tasks;
-5. Exit the program;
-
-* App running;
-* Vector;
+* Handle crashing when Editing or Deleting tasks if user inputs a number higher than the vector size.
