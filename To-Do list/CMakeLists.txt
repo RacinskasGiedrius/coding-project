@@ -7,4 +7,5 @@ add_executable(To_Do_list src/main.cpp
         src/taskFunctionality.cpp
         src/helperFunctions.cpp
         include/helperFunctions.h
-        include/taskFunctionality.h)
+        include/taskFunctionality.h
+)
