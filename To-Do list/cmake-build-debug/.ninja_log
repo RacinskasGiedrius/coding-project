@@ -1,3 +1,10 @@
 # ninja log v6
-6	488	7485428431556946	CMakeFiles/To_Do_list.dir/main.cpp.obj	1acb268ab79b4a15
-490	642	7485428436398018	To_Do_list.exe	745069bdecf71f37
+425	536	7493522188347228	To_Do_list.exe	f7883da12c986a4f
+2	243	7493522974659639	build.ninja	11e49e28492ba07a
+15	547	7493517761851202	CMakeFiles/To_Do_list.dir/src/main.cpp.obj	cd2004763b71442c
+12	610	7493520785428262	CMakeFiles/To_Do_list.dir/src/taskFunctionality.cpp.obj	3e1f6b03654314a8
+7	424	7493522184173426	CMakeFiles/To_Do_list.dir/src/helperFunctions.cpp.obj	1f94cfaff2c2fbfb
+10	435	7493523393032820	CMakeFiles/To_Do_list.dir/src/helperFunctions.cpp.obj	1f94cfaff2c2fbfb
+435	543	7493523397286687	To_Do_list.exe	f7883da12c986a4f
+5	431	7493525417084955	CMakeFiles/To_Do_list.dir/src/helperFunctions.cpp.obj	1f94cfaff2c2fbfb
+432	537	7493525421348833	To_Do_list.exe	f7883da12c986a4f
