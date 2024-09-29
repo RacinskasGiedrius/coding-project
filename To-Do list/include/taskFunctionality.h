@@ -1,0 +1,6 @@
+#ifndef TASKFUNCTIONALITY_H
+#define TASKFUNCTIONALITY_H
+
+void mainMenu();
+
+#endif //TASKFUNCTIONALITY_H
